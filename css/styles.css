@@ -1,0 +1,116 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fb; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ff4081; 
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#addCardBtn {
+    border-radius: 50px;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    background-color: #f06292; 
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+#addCardBtn:hover {
+    background-color: #e91e63; 
+}
+
+/* Cards */
+.card {
+    border-radius: 12px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    background-color: white;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #5c6bc0;
+    margin-bottom: 18px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #f8bbd0; 
+    border-radius: 12px;
+    margin: 12px 0;
+    padding: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.task-list li:hover {
+    background-color: #f48fb1;
+    transform: scale(1.02); 
+}
+
+.task-list li:active {
+    transform: scale(0.98); 
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: #b0bec5;
+    font-style: italic;
+}
+
+/* Botones */
+.btn {
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-weight: 600;
+}
+
+.add-task-btn {
+    background-color: #ff80ab; 
+    color: white;
+    font-size: 0.9rem;
+}
+
+.add-task-btn:hover {
+    background-color: #f50057; 
+}
+
+.btn-danger {
+    background-color: #b3b3b3;
+    border: none;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+}
+
+.btn-danger:hover {
+    background-color: #ff2222;
+}
