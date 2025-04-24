@@ -6,16 +6,17 @@
   <title>To-Do App con múltiples listas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <script src="script.js"></script>
+  
 </head>
 
 
 <body>
 
   <nav class="navbar navbar-expand-lg px-4">
-    <a class="navbar-brand" href="#" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">📝 To-Do App</a>
+    <a class="navbar-brand" href="#" >📝 To-Do App</a>
     <div class="ms-auto">
-      <button id="addCardBtn" class="btn btn-light">Agregar nueva lista</button>
+      <button id="addCardBtn" class="btn btn-light">Nueva lista</button>
+      <button id="deleteCardBtn" class="btn btn-light">Eliminar</button>
     </div>
   </nav>
 
@@ -23,18 +24,18 @@
   <div id="cardTemplate" class="card mb-4" style="display: none;">
     <div class="card-body">
       <!-- Título editable cards -->
-      <h5 class="card-title" contenteditable="true">Nombre de la lista</h5>
-
-      <!-- Botón para agregar tarea -->
-      <div class="input-group mb-3">
-        <input type="text" class="form-control task-input" placeholder="Nueva tarea...">
-        <button class="btn btn-success add-task-btn">Agregar tarea</button>
-      </div>
+      <input class="card-title" type="text" contenteditable="true" placeholder="Sin titulo"></input>
 
       <!-- Lista de tareas (js) -->
       <ul class="list-group task-list">
        
       </ul>
+
+      <!-- Botón para agregar tarea -->
+      <div class="input-group mb-3">
+        <input type="text" class="form-control task-input" placeholder="Nueva tarea...">
+        <button class="btn btn-success add-task-btn">+</button>
+      </div>
     </div>
   </div>
 
@@ -45,6 +46,6 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  
+  <script src="script.js"></script>
 </body>
 </html>
